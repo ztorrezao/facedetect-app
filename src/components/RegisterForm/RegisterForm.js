@@ -4,7 +4,7 @@ class RegisterForm extends React.Component {
   constructor(props) {
   	super(props);
   	this.state = {
-			registerName: '',
+		registerName: '',
   		registerEmail: '',
   		registerPassword: '',
   		registerError: ''
@@ -39,7 +39,7 @@ class RegisterForm extends React.Component {
 		if (!registerName || !registerPassword || !registerEmail) {
 			this.setState({registerError: 'Please enter valid informations.'})
 		} else {
-				fetch('http://localhost:3001/register', {
+				fetch('https://facedetect-app-api-01.herokuapp.com/register', {
   			method: 'POST',
   			headers: {
   				'Content-Type': 'application/json; charset=utf-8'

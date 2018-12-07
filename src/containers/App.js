@@ -117,7 +117,7 @@ class App extends Component {
             imageURL: this.state.input
         });
         
-        fetch('http://localhost:3001/imageapi', {
+        fetch('https://facedetect-app-api-01.herokuapp.com/imageapi', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8'
@@ -137,7 +137,7 @@ class App extends Component {
     }
 
     onEntriesUpdate = () => {
-        fetch('http://localhost:3001/image', {
+        fetch('https://facedetect-app-api-01.herokuapp.com/image', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8'

@@ -33,7 +33,7 @@ class LoginForm extends Component {
 				loginError: 'Invalid username or password'
 			});
 		} else { 
-			fetch('http://localhost:3001/singin', {
+			fetch('https://facedetect-app-api-01.herokuapp.com/singin', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json; charset=utf-8'
